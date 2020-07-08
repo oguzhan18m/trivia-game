@@ -1,12 +1,9 @@
-.game-over-card {
-   width: 30rem;
-}
-
 .game-over {
    text-align: center;
    justify-content: center;
    height: 100%;
    width: 100%;
+   margin-top: 3rem;
 }
 .game-over-text {
    text-align: center;

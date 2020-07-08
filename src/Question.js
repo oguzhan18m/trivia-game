@@ -6,15 +6,15 @@ const Question = ({
    handleAnswer,
    handleNextQuestion,
    showAnswers,
-   joker,
-   usedJoker,
 }) => {
    return (
       <>
          <div className="row question-answers">
-            <div className="card mx-auto col-xs-12 col-sm-12 col-md-10 col-lg-9 col-xl-8 padding ">
+            <div className="card mx-auto col-xs-12 col-sm-12 col-md-10 col-lg-9 col-xl-8 padding-question ">
                <div className="card-body ">
-                  <h6 className="card-title">Question:</h6>
+                  <h6 className="card-title">
+                     <strong>Question:</strong>{" "}
+                  </h6>
                   <h7
                      className="card-text"
                      dangerouslySetInnerHTML={{ __html: question }}
@@ -22,23 +22,19 @@ const Question = ({
                </div>
             </div>
 
-            <div className="options mx-auto col-xs-12 col-sm-12 col-md-10 col-lg-9 col-xl-8 padding ">
+            <div className="options mx-auto col-xs-12 col-sm-12 col-md-10 col-lg-9 col-xl-8 ">
                {answers.map((answer) => {
                   const bgColor = showAnswers
                      ? answer === correct_answer
                         ? "btn btn-success"
-                        : "btn btn-danger "
+                        : "btn btn-danger disabled"
                      : "btn btn-outline-dark ";
-
-                  const jokerUsed = usedJoker
-                     ? (answer.incorrect_answers[0] =
-                          "btn btn-warning rounded-pill")
-                     : "btn btn-outline-dark";
 
                   return (
                      <button
                         type="button"
-                        className={` ${bgColor} btn btn-outline-dark col-12 padding`}
+                        id="questBtn"
+                        className={` ${bgColor} questionBtn  btn btn-outline-dark col-12 padding-answers`}
                         onClick={() => handleAnswer(answer)}
                         dangerouslySetInnerHTML={{ __html: answer }}
                      />
