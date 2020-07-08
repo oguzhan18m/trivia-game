@@ -46,7 +46,6 @@ function Home() {
                   ...question.incorrect_answers,
                ].sort(() => Math.random() - 0.5),
             }));
-            console.log(questions);
             setQuestions(questions);
          });
       startTimerForQuestion();
@@ -112,7 +111,6 @@ function Home() {
       }
       document.getElementById("joker").play();
 
-      // yanlış olan 2 seçenek silinecek
       e.target.className = e.target.className + " disabled";
       const quesButtons = document.getElementsByClassName("questionBtn");
 
