@@ -1,0 +1,15 @@
+.question-answers {
+   margin-top: 0.5rem;
+}
+.card {
+   background-color: rgb(71, 135, 253);
+   color: white;
+}
+.padding {
+   padding: 0.2rem;
+   margin-bottom: 0.2rem;
+   margin-top: 0.5rem;
+}
+.btn-outline-dark {
+   font-size: 12px;
+}

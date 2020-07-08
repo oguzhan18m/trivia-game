@@ -1,0 +1,72 @@
+.game-over-card {
+   width: 30rem;
+}
+
+.game-over {
+   text-align: center;
+   justify-content: center;
+   height: 100%;
+   width: 100%;
+}
+.game-over-text {
+   text-align: center;
+   justify-content: center;
+   align-items: center;
+}
+.game-over-text h1 {
+   font-size: 50px;
+   font-weight: 600;
+   color: rgb(205, 70, 250);
+}
+
+.game-over-text h4 {
+   font-size: 40px;
+   font-weight: 600;
+   color: rgb(55, 0, 158);
+}
+
+.game-over-text p {
+   font-size: 20px;
+   font-weight: 600;
+   color: rgb(18, 1, 255);
+}
+
+.game-over-img {
+   text-align: center;
+   justify-content: center;
+   align-items: center;
+   margin-top: 2rem;
+   margin-bottom: 5rem;
+}
+.happy-gif {
+   margin-top: 5rem;
+   margin-bottom: 5rem;
+   width: 150px;
+}
+
+/* .game-over h1 {
+   margin-top: 1rem;
+   margin-bottom: 3rem;
+   font-size: 60px;
+   font-weight: 600;
+   color: rgb(255, 100, 255);
+   text-align: center;
+   justify-content: center;
+}
+.game-over p {
+   font-size: 24px;
+   font-weight: 600;
+   color: rgb(6, 72, 255);
+   text-align: center;
+   justify-content: center;
+} */
+/* 
+.happy-gif {
+   margin-top: 5rem;
+   margin-bottom: 5rem;
+   width: 50%;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+} */
