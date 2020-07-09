@@ -21,5 +21,10 @@
 .trivia-body .card-title {
    font-size: larger;
    font-weight: 800;
-   color: rgb(59, 39, 187);
+   color: rgb(38, 19, 156);
+}
+.trivia-body .card-text {
+   font-size: 13px;
+   padding: 0.5rem;
+   justify-content: center;
 }
